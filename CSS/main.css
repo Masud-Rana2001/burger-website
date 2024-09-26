@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn{
+    @apply inline-block text-white  py-3 px-8 rounded-sm shadow-md ;
+  }
+  .btn-primary{
+    @apply bg-secondaryColor hover:bg-opacity-75 text-blackColor ;
+  }
+  
+}
+
+
+
+@layer utilities {
+
+ .home-title,
+ .about-title{
+  @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+ }
+ .about-title{
+  @apply text-3xl;
+ }
+ .separator{
+  @apply w-40 h-[2px] bg-secondaryColor
+   my-5;
+ }
+ .paragraph{
+  @apply text-sm text-paragraphColor  leading-5;
+ }
+}
